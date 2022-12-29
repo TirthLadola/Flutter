@@ -11,8 +11,8 @@ void main(List<String> args) {
   String? name;
   String? number;
   var map = new Map();
-  map['name']="Deep";
-  map['number']="816065294";
+  map['name']="Tirth";
+  map['number']="9874563210";
 
   print("${map['name']}");
   print("${map['number']}");
