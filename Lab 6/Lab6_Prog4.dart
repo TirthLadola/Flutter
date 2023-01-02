@@ -50,7 +50,7 @@ class Friend {
   void displayFriendDetail() {
     for (int i = 0; i < friendList.length; i++) {
       Map<String, dynamic> map = friendList[i];
-      print("===================");
+      print("====================");
       print("Name: ${map["name"]}");
       print("Phone number: ${map["number"]}");
       print("City: ${map["city"]}");
