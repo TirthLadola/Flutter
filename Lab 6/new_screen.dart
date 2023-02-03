@@ -32,24 +32,68 @@ class _thirdState extends State<third> {
           Column(
             children: [
               Expanded(
-
                 child: Row(
                   children: [
                     Expanded(
-
                       child: Container(
+                        padding: EdgeInsets.only(left: 15),
                         color: Colors.white,
-                        child: Text("5"),
+                        child: Text(
+                          "5",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 65),
+                        ),
                       ),
                     ),
                     Expanded(
-                      child: Container(
-                        color: Colors.blueAccent,
+                      flex: 2,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(top: 27),
+                              // color: Colors.blueAccent,
+                              child: Text('Exersizes'),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              // color: Colors.blueAccent,
+                              child: Text('Left'),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     Expanded(
+                      flex: 5,
                       child: Container(
-                        color: Colors.cyan,
+                        margin: EdgeInsets.fromLTRB(40, 0, 40, 0),
+                        // color:Colors.grey,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Colors.grey),
+                        // color: Colors.grey,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              child: Icon(
+                                Icons.flag,
+                                color: Colors.redAccent,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(15.0),
+                              // color: Colors.cyan,
+                              child: Text('Finish Wokout'),
+                            )
+                          ],
+                        ),
                       ),
                     )
                   ],
@@ -57,14 +101,36 @@ class _thirdState extends State<third> {
               ),
               Expanded(
                 flex: 2,
-                child: Container(
-                  color: Colors.redAccent,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Container(
+                        padding: EdgeInsets.fromLTRB(60, 31, 0, 0),
+                        width: double.infinity,
+                        // color: Colors.redAccent,
+                        child: Text(
+                          'Relax,',
+                          style: TextStyle(
+                              fontSize: 60, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        padding: EdgeInsets.fromLTRB(60, 0, 0, 40),
+                        width: double.infinity,
+                        // color: Colors.black45,
+                        child: Text('walk around',style: TextStyle(fontSize: 50),),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Expanded(
                 flex: 3,
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.black45,
                 ),
               ),
               Expanded(
